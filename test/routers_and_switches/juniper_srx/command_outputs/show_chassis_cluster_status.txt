@@ -1,0 +1,24 @@
+
+node0:
+--------------------------------------------------------------------------
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                DA5117AK0027      SRX550M
+Midplane         REV 05   750-063950   BCAD9221
+Routing Engine   REV 12   711-062269   BCAD7626          RE-SRX550M
+FPC 0                                                    FPC
+  PIC 0                                                  6x GE, 4x GE SFP Base PIC
+Power Supply 0   Rev 04   740-024283   AD87219           PS 645W AC
+Power Supply 1   Rev 04   740-024283   ZK81778           PS 645W AC
+node1:
+--------------------------------------------------------------------------
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                DA4017AK0022      SRX550M
+Midplane         REV 10   750-063950   ACPY5161
+Routing Engine   REV 06   711-062269   ACPZ5210          RE-SRX550M
+FPC 0                                                    FPC
+  PIC 0                                                  6x GE, 4x GE SFP Base PIC
+Power Supply 0   Rev 04   740-024283   AA83905           PS 645W AC
+Power Supply 1   Rev 04   740-024283   AD87052           PS 645W AC
+{primary:node0}

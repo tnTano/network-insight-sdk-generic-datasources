@@ -1,0 +1,46 @@
+
+master:
+  Router ID: 10.30.98.73
+  Type: forwarding        State: Active
+  Tables:
+    inet.0                 : 129 routes (63 active, 0 holddown, 43 hidden)
+    inet6.0                : 14 routes (13 active, 0 holddown, 1 hidden)
+
+__juniper_private1__:
+  Router ID: 0.0.0.0
+  Type: forwarding        State: Active
+  Interfaces:
+    fab1.0
+    fab0.0
+    lo0.16385
+    fxp1.0
+  Tables:
+    __juniper_private1__.inet.0: 11 routes (11 active, 0 holddown, 0 hidden)
+
+__juniper_private2__:
+  Router ID: 0.0.0.0
+  Type: forwarding        State: Active
+  Interfaces:
+    lo0.16384
+  Tables:
+    __juniper_private2__.inet.0: 1 routes (0 active, 0 holddown, 1 hidden)
+
+__master.anon__:
+  Router ID: 0.0.0.0
+  Type: forwarding        State: Active
+
+dmz-vr:
+  Router ID: 10.10.253.1
+  Type: vrf               State: Active
+  Interfaces:
+    reth0.50
+    reth0.51
+    reth0.1564
+  Route-distinguisher: 185.158.146.251:10
+  Vrf-import: [ reject-all ]
+  Vrf-export: [ reject-all ]
+  Fast-reroute-priority: low
+  Tables:
+    dmz-vr.inet.0          : 11 routes (11 active, 0 holddown, 0 hidden)
+
+{primary:node0}

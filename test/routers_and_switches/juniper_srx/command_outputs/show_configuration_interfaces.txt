@@ -1,0 +1,73 @@
+
+set interfaces ge-0/0/4 description "sw2 - ge-0/0/44"
+set interfaces ge-0/0/4 gigether-options redundant-parent reth0
+set interfaces ge-0/0/5 description "sw1 - ge-0/0/44"
+set interfaces ge-0/0/5 gigether-options redundant-parent reth0
+set interfaces ge-9/0/4 description "sw2 - ge-0/0/43"
+set interfaces ge-9/0/4 gigether-options redundant-parent reth0
+set interfaces ge-9/0/5 description "sw1 - ge-0/0/43"
+set interfaces ge-9/0/5 gigether-options redundant-parent reth0
+set interfaces fab0 fabric-options member-interfaces ge-0/0/2
+set interfaces fab1 fabric-options member-interfaces ge-9/0/2
+set interfaces lo0 unit 0 family inet filter input filter-self-in
+set interfaces reth0 vlan-tagging
+set interfaces reth0 redundant-ether-options redundancy-group 1
+set interfaces reth0 redundant-ether-options lacp passive
+set interfaces reth0 unit 26 description "NL-IX NAWAS"
+set interfaces reth0 unit 26 vlan-id 26
+set interfaces reth0 unit 26 family inet address 213.207.10.56/26
+set interfaces reth0 unit 26 family inet6 address 2a02:10:3::a505:1299:1/64
+set interfaces reth0 unit 50 description "DMZ - Internal"
+set interfaces reth0 unit 50 vlan-id 50
+set interfaces reth0 unit 50 family inet address 10.194.0.1/24
+set interfaces reth0 unit 51 description "DMZ2 - Internal"
+set interfaces reth0 unit 51 vlan-id 51
+set interfaces reth0 unit 51 family inet address 10.10.253.1/24
+set interfaces reth0 unit 52 description GS_EX_TO_SRX
+set interfaces reth0 unit 52 vlan-id 52
+set interfaces reth0 unit 52 family inet address 100.95.200.1/24
+set interfaces reth0 unit 52 family inet6 address 2a07:ae01::1/112
+set interfaces reth0 unit 470 description "Nextpertise Uplink A"
+set interfaces reth0 unit 470 vlan-id 470
+set interfaces reth0 unit 470 family inet address 77.73.224.161/31
+set interfaces reth0 unit 470 family inet6 address 2a02:690:4310:470::b/127
+set interfaces reth0 unit 471 description "Nextpertise Uplink B"
+set interfaces reth0 unit 471 vlan-id 471
+set interfaces reth0 unit 471 family inet address 77.73.224.163/31
+set interfaces reth0 unit 910 description "NL-IX - PM 1"
+set interfaces reth0 unit 910 vlan-id 910
+set interfaces reth0 unit 910 family inet address 91.236.19.2/29
+set interfaces reth0 unit 919 description "NL-IX - PM 4 - 4G"
+set interfaces reth0 unit 919 vlan-id 919
+set interfaces reth0 unit 919 family inet address 10.30.98.73/29
+set interfaces reth0 unit 920 description "NL-IX - PM 2"
+set interfaces reth0 unit 920 vlan-id 920
+set interfaces reth0 unit 920 family inet address 91.236.19.10/29
+set interfaces reth0 unit 928 description "NL-IX - PM 3 - 4G"
+set interfaces reth0 unit 928 vlan-id 928
+set interfaces reth0 unit 928 family inet address 10.130.98.75/29
+set interfaces reth0 unit 1054 description "NL-IX - Heerlen"
+set interfaces reth0 unit 1054 vlan-id 1054
+set interfaces reth0 unit 1054 family inet address 178.21.219.12/29
+set interfaces reth0 unit 1564 vlan-id 1564
+set interfaces reth0 unit 1564 family inet address 185.158.146.251/24
+set interfaces reth0 unit 2706 description "NL-IX - KPN SIPX - VLAN2706"
+set interfaces reth0 unit 2706 vlan-id 2706
+set interfaces reth0 unit 2706 family inet address 145.54.72.230/28
+set interfaces reth0 unit 3606 description "NL-IX - KPN"
+set interfaces reth0 unit 3606 vlan-id 3606
+set interfaces reth0 unit 3606 family inet address 10.45.20.6/28
+deactivate interfaces reth0 unit 3606
+set interfaces st0 unit 0 description "Leslie Thuis"
+set interfaces st0 unit 0 family inet
+set interfaces st0 unit 0 family inet6
+set interfaces st0 unit 1 description "Redworks Office"
+set interfaces st0 unit 1 family inet
+set interfaces st0 unit 2 description "HHT Herps"
+set interfaces st0 unit 2 family inet
+set interfaces st0 unit 2 family inet6
+set interfaces st0 unit 3 family inet
+set interfaces st0 unit 4 family inet
+set interfaces st0 unit 4 family inet6
+
+{primary:node0}

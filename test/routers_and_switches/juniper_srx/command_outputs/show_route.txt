@@ -1,0 +1,1643 @@
+
+inet.0: 86 destinations, 129 routes (63 active, 0 holddown, 43 hidden)
+0.0.0.0/0 (3 entries, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1401
+                Address: 0x19a1150
+                Next-hop reference count: 33
+                Source: 77.73.224.160
+                Next hop: 77.73.224.160 via reth0.470, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 41960
+                Age: 4w5d 12:13:18 	Metric: 10
+                Validation State: unverified
+                Task: BGP_41960_51299.77.73.224.160
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 41960 I
+                Accepted
+                Localpref: 100
+                Router ID: 195.238.86.36
+         BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1425
+                Address: 0x19a1208
+                Next-hop reference count: 26
+                Source: 77.73.224.162
+                Next hop: 77.73.224.162 via reth0.471, selected
+                Session Id: 0x0
+                State: <NotBest Ext>
+                Inactive reason: Not Best in its group - Route Metric or MED comparison
+                Peer AS: 41960
+                Age: 4w5d 12:28:43 	Metric: 60
+                Validation State: unverified
+                Task: BGP_41960_51299.77.73.224.162
+                AS path: 41960 I
+                Accepted
+                Localpref: 100
+                Router ID: 195.238.87.48
+         Static Preference: 200
+                Next hop type: Router, Next hop index: 1401
+                Address: 0x19a1150
+                Next-hop reference count: 33
+                Next hop: 77.73.224.160 via reth0.470, selected
+                Session Id: 0x0
+                State: <Int Ext>
+                Inactive reason: Route Preference
+                Age: 16w0d 17:18:08 	Metric: 250
+                Validation State: unverified
+                Task: RT
+                AS path: I
+
+10.10.10.0/24 (1 entry, 1 announced)
+        *Static Preference: 5
+                Next hop type: Router, Next hop index: 1451
+                Address: 0x19a1544
+                Next-hop reference count: 4
+                Next hop: via st0.1, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 8w6d 8:38:53
+                Validation State: unverified
+                Task: RT
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: I
+
+10.10.253.0/24 (1 entry, 1 announced)
+        *Static Preference: 5
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active NoReadvrt Int Ext>
+                Age: 16w0d 17:18:08
+                Validation State: unverified
+                Task: RT
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+10.10.254.0/24 (1 entry, 1 announced)
+        *OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 14w2d 13:32:42 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+10.30.98.72/29 (2 entries, 1 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a0f84
+                Next-hop reference count: 1
+                Next hop: via reth0.919, selected
+                State: <Active Int>
+                Age: 16w0d 17:18:08
+                Validation State: unverified
+                Task: IF
+                Announcement bits (1): 2-OSPF
+                AS path: I
+         OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Int Ext>
+                Inactive reason: Route Preference
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                AS path: I
+
+10.30.98.73/32 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.919
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:14
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+10.130.98.72/29 (2 entries, 1 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a103c
+                Next-hop reference count: 1
+                Next hop: via reth0.928, selected
+                State: <Active Int>
+                Age: 16w0d 17:18:08
+                Validation State: unverified
+                Task: IF
+                Announcement bits (1): 2-OSPF
+                AS path: I
+         OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Int Ext>
+                Inactive reason: Route Preference
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                AS path: I
+
+10.130.98.75/32 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.928
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:14
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+62.59.160.248/29 (1 entry, 1 announced)
+        *OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+77.73.224.160/31 (1 entry, 1 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a0d00
+                Next-hop reference count: 1
+                Next hop: via reth0.470, selected
+                State: <Active Int>
+                Age: 16w0d 17:18:08
+                Validation State: unverified
+                Task: IF
+                Announcement bits (1): 2-OSPF
+                AS path: I
+
+77.73.224.161/32 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.470
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:14
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+77.73.224.162/31 (1 entry, 1 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a0ecc
+                Next-hop reference count: 1
+                Next hop: via reth0.471, selected
+                State: <Active Int>
+                Age: 16w0d 17:18:08
+                Validation State: unverified
+                Task: IF
+                Announcement bits (1): 2-OSPF
+                AS path: I
+
+77.73.224.163/32 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.471
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:14
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+83.96.226.104/29 (1 entry, 1 announced)
+        *OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+91.214.148.0/24 (2 entries, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1401
+                Address: 0x19a1150
+                Next-hop reference count: 33
+                Source: 77.73.224.160
+                Next hop: 77.73.224.160 via reth0.470, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 41960
+                Age: 4w5d 12:12:05
+                Validation State: unverified
+                Task: BGP_41960_51299.77.73.224.160
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 41960 44557 I
+                Aggregator: 44557 91.214.148.6
+                Accepted
+                Localpref: 100
+                Router ID: 195.238.86.36
+         BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1425
+                Address: 0x19a1208
+                Next-hop reference count: 26
+                Source: 77.73.224.162
+                Next hop: 77.73.224.162 via reth0.471, selected
+                Session Id: 0x0
+                State: <NotBest Ext>
+                Inactive reason: Not Best in its group - Active preferred
+                Peer AS: 41960
+                Age: 4w4d 13:37:48
+                Validation State: unverified
+                Task: BGP_41960_51299.77.73.224.162
+                AS path: 41960 44557 I
+                Aggregator: 44557 91.214.148.6
+                Accepted
+                Localpref: 100
+                Router ID: 195.238.87.48
+
+91.214.149.0/24 (2 entries, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1401
+                Address: 0x19a1150
+                Next-hop reference count: 33
+                Source: 77.73.224.160
+                Next hop: 77.73.224.160 via reth0.470, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 41960
+                Age: 3w6d 8:47:24
+                Validation State: unverified
+                Task: BGP_41960_51299.77.73.224.160
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 41960 44557 I
+                Aggregator: 44557 91.214.149.6
+                Accepted
+                Localpref: 100
+                Router ID: 195.238.86.36
+         BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1425
+                Address: 0x19a1208
+                Next-hop reference count: 26
+                Source: 77.73.224.162
+                Next hop: 77.73.224.162 via reth0.471, selected
+                Session Id: 0x0
+                State: <NotBest Ext>
+                Inactive reason: Not Best in its group - Active preferred
+                Peer AS: 41960
+                Age: 3w6d 8:47:24
+                Validation State: unverified
+                Task: BGP_41960_51299.77.73.224.162
+                AS path: 41960 44557 I
+                Aggregator: 44557 91.214.149.6
+                Accepted
+                Localpref: 100
+                Router ID: 195.238.87.48
+
+91.214.150.0/24 (2 entries, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1401
+                Address: 0x19a1150
+                Next-hop reference count: 33
+                Source: 77.73.224.160
+                Next hop: 77.73.224.160 via reth0.470, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 41960
+                Age: 4w5d 12:12:05
+                Validation State: unverified
+                Task: BGP_41960_51299.77.73.224.160
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 41960 44557 I
+                Accepted
+                Localpref: 100
+                Router ID: 195.238.86.36
+         BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1425
+                Address: 0x19a1208
+                Next-hop reference count: 26
+                Source: 77.73.224.162
+                Next hop: 77.73.224.162 via reth0.471, selected
+                Session Id: 0x0
+                State: <NotBest Ext>
+                Inactive reason: Not Best in its group - Active preferred
+                Peer AS: 41960
+                Age: 4w4d 13:37:48
+                Validation State: unverified
+                Task: BGP_41960_51299.77.73.224.162
+                AS path: 41960 44557 I
+                Accepted
+                Localpref: 100
+                Router ID: 195.238.87.48
+
+91.214.151.0/24 (2 entries, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1401
+                Address: 0x19a1150
+                Next-hop reference count: 33
+                Source: 77.73.224.160
+                Next hop: 77.73.224.160 via reth0.470, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 41960
+                Age: 4w5d 12:12:05
+                Validation State: unverified
+                Task: BGP_41960_51299.77.73.224.160
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 41960 44557 I
+                Accepted
+                Localpref: 100
+                Router ID: 195.238.86.36
+         BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1425
+                Address: 0x19a1208
+                Next-hop reference count: 26
+                Source: 77.73.224.162
+                Next hop: 77.73.224.162 via reth0.471, selected
+                Session Id: 0x0
+                State: <NotBest Ext>
+                Inactive reason: Not Best in its group - Active preferred
+                Peer AS: 41960
+                Age: 4w4d 13:37:48
+                Validation State: unverified
+                Task: BGP_41960_51299.77.73.224.162
+                AS path: 41960 44557 I
+                Accepted
+                Localpref: 100
+                Router ID: 195.238.87.48
+
+91.236.19.0/29 (2 entries, 1 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a0f28
+                Next-hop reference count: 1
+                Next hop: via reth0.910, selected
+                State: <Active Int>
+                Age: 16w0d 17:18:08
+                Validation State: unverified
+                Task: IF
+                Announcement bits (1): 2-OSPF
+                AS path: I
+         OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Int Ext>
+                Inactive reason: Route Preference
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                AS path: I
+
+91.236.19.2/32 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.910
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:14
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+91.236.19.8/29 (2 entries, 1 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a0fe0
+                Next-hop reference count: 1
+                Next hop: via reth0.920, selected
+                State: <Active Int>
+                Age: 16w0d 17:18:08
+                Validation State: unverified
+                Task: IF
+                Announcement bits (1): 2-OSPF
+                AS path: I
+         OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Int Ext>
+                Inactive reason: Route Preference
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                AS path: I
+
+91.236.19.10/32 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.920
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:14
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+100.64.0.0/30 (1 entry, 1 announced)
+        *OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 14w2d 13:32:42 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+100.95.100.0/24 (1 entry, 1 announced)
+        *OSPF   Preference: 10
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int>
+                Age: 14w2d 13:32:42 	Metric: 202
+                Validation State: unverified
+                Area: 0.0.0.0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+100.95.200.0/24 (1 entry, 0 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a0ca4
+                Next-hop reference count: 1
+                Next hop: via reth0.52, selected
+                State: <Active Int>
+                Age: 16w0d 17:18:08
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+100.95.200.1/32 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.52
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:14
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+139.156.119.0/26 (2 entries, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1441
+                Address: 0x19a148c
+                Next-hop reference count: 18
+                Source: 145.54.72.225
+                Next hop: 145.54.72.225 via reth0.2706, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 65444
+                Age: 16w0d 17:17:48 	Metric: 0
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.225
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 65444 I
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.135
+         BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 0
+                Address: 0x19a1430
+                Next-hop reference count: 9
+                Source: 145.54.72.233
+                Next hop: 145.54.72.233 via reth0.2706, selected
+                Session Id: 0x0
+                State: <NotBest Ext>
+                Inactive reason: Not Best in its group - Active preferred
+                Peer AS: 65444
+                Age: 9w2d 14:28:59 	Metric: 0
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.233
+                AS path: 65444 I
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.136
+
+139.156.119.192/26 (1 entry, 1 announced)
+        *OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+145.54.65.0/29 (2 entries, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1441
+                Address: 0x19a148c
+                Next-hop reference count: 18
+                Source: 145.54.72.225
+                Next hop: 145.54.72.225 via reth0.2706, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 65444
+                Age: 16w0d 17:17:48
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.225
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 65444 ?
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.135
+         BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 0
+                Address: 0x19a1430
+                Next-hop reference count: 9
+                Source: 145.54.72.233
+                Next hop: 145.54.72.233 via reth0.2706, selected
+                Session Id: 0x0
+                State: <NotBest Ext>
+                Inactive reason: Not Best in its group - Active preferred
+                Peer AS: 65444
+                Age: 9w2d 14:28:59
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.233
+                AS path: 65444 ?
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.136
+
+145.54.65.8/29 (2 entries, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1441
+                Address: 0x19a148c
+                Next-hop reference count: 18
+                Source: 145.54.72.225
+                Next hop: 145.54.72.225 via reth0.2706, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 65444
+                Age: 16w0d 17:17:48
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.225
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 65444 ?
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.135
+         BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 0
+                Address: 0x19a1430
+                Next-hop reference count: 9
+                Source: 145.54.72.233
+                Next hop: 145.54.72.233 via reth0.2706, selected
+                Session Id: 0x0
+                State: <NotBest Ext>
+                Inactive reason: Not Best in its group - Active preferred
+                Peer AS: 65444
+                Age: 9w2d 14:28:59
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.233
+                AS path: 65444 ?
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.136
+
+145.54.65.16/29 (2 entries, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1441
+                Address: 0x19a148c
+                Next-hop reference count: 18
+                Source: 145.54.72.225
+                Next hop: 145.54.72.225 via reth0.2706, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 65444
+                Age: 16w0d 17:17:48
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.225
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 65444 ?
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.135
+         BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 0
+                Address: 0x19a1430
+                Next-hop reference count: 9
+                Source: 145.54.72.233
+                Next hop: 145.54.72.233 via reth0.2706, selected
+                Session Id: 0x0
+                State: <NotBest Ext>
+                Inactive reason: Not Best in its group - Active preferred
+                Peer AS: 65444
+                Age: 9w2d 14:28:59
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.233
+                AS path: 65444 ?
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.136
+
+145.54.65.24/29 (2 entries, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1441
+                Address: 0x19a148c
+                Next-hop reference count: 18
+                Source: 145.54.72.225
+                Next hop: 145.54.72.225 via reth0.2706, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 65444
+                Age: 16w0d 17:17:48
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.225
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 65444 ?
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.135
+         BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 0
+                Address: 0x19a1430
+                Next-hop reference count: 9
+                Source: 145.54.72.233
+                Next hop: 145.54.72.233 via reth0.2706, selected
+                Session Id: 0x0
+                State: <NotBest Ext>
+                Inactive reason: Not Best in its group - Active preferred
+                Peer AS: 65444
+                Age: 9w2d 14:28:59
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.233
+                AS path: 65444 ?
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.136
+
+145.54.65.56/29 (2 entries, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1441
+                Address: 0x19a148c
+                Next-hop reference count: 18
+                Source: 145.54.72.225
+                Next hop: 145.54.72.225 via reth0.2706, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 65444
+                Age: 16w0d 17:17:48
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.225
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 65444 ?
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.135
+         BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 0
+                Address: 0x19a1430
+                Next-hop reference count: 9
+                Source: 145.54.72.233
+                Next hop: 145.54.72.233 via reth0.2706, selected
+                Session Id: 0x0
+                State: <NotBest Ext>
+                Inactive reason: Not Best in its group - Active preferred
+                Peer AS: 65444
+                Age: 9w2d 14:28:59
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.233
+                AS path: 65444 ?
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.136
+
+145.54.65.96/29 (2 entries, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1441
+                Address: 0x19a148c
+                Next-hop reference count: 18
+                Source: 145.54.72.225
+                Next hop: 145.54.72.225 via reth0.2706, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 65444
+                Age: 16w0d 17:17:48
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.225
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 65444 ?
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.135
+         BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 0
+                Address: 0x19a1430
+                Next-hop reference count: 9
+                Source: 145.54.72.233
+                Next hop: 145.54.72.233 via reth0.2706, selected
+                Session Id: 0x0
+                State: <NotBest Ext>
+                Inactive reason: Not Best in its group - Active preferred
+                Peer AS: 65444
+                Age: 9w2d 14:28:59
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.233
+                AS path: 65444 ?
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.136
+
+145.54.65.104/29 (2 entries, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1441
+                Address: 0x19a148c
+                Next-hop reference count: 18
+                Source: 145.54.72.225
+                Next hop: 145.54.72.225 via reth0.2706, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 65444
+                Age: 16w0d 17:17:48
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.225
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 65444 ?
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.135
+         BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 0
+                Address: 0x19a1430
+                Next-hop reference count: 9
+                Source: 145.54.72.233
+                Next hop: 145.54.72.233 via reth0.2706, selected
+                Session Id: 0x0
+                State: <NotBest Ext>
+                Inactive reason: Not Best in its group - Active preferred
+                Peer AS: 65444
+                Age: 9w2d 14:28:59
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.233
+                AS path: 65444 ?
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.136
+
+145.54.65.128/29 (1 entry, 1 announced)
+        *OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+145.54.65.136/29 (1 entry, 1 announced)
+        *OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+145.54.65.144/29 (1 entry, 1 announced)
+        *OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+145.54.65.152/29 (1 entry, 1 announced)
+        *OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+145.54.65.184/29 (1 entry, 1 announced)
+        *OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+145.54.65.224/29 (1 entry, 1 announced)
+        *OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+145.54.65.232/29 (1 entry, 1 announced)
+        *OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+145.54.72.224/28 (2 entries, 1 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a0db8
+                Next-hop reference count: 1
+                Next hop: via reth0.2706, selected
+                State: <Active Int>
+                Age: 16w0d 17:18:08
+                Validation State: unverified
+                Task: IF
+                Announcement bits (1): 2-OSPF
+                AS path: I
+         OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Int Ext>
+                Inactive reason: Route Preference
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                AS path: I
+
+145.54.72.230/32 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.2706
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:14
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+172.25.97.0/24 (2 entries, 1 announced)
+        *Static Preference: 5
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active NoReadvrt Int Ext>
+                Age: 16w0d 17:18:08
+                Validation State: unverified
+                Task: RT
+                Announcement bits (1): 0-KRT
+                AS path: I
+         OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Int Ext>
+                Inactive reason: Route Preference
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                AS path: I
+
+178.21.216.0/21 (1 entry, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1432
+                Address: 0x19a1378
+                Next-hop reference count: 5
+                Source: 178.21.219.9
+                Next hop: 178.21.219.9 via reth0.1054, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 38915
+                Age: 3d 5:38:09 	Metric: 1
+                Validation State: unverified
+                Task: BGP_38915_51299.178.21.219.9
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 38915 I
+                Accepted
+                Localpref: 100
+                Router ID: 193.203.221.122
+
+178.21.219.8/29 (1 entry, 1 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a1098
+                Next-hop reference count: 1
+                Next hop: via reth0.1054, selected
+                State: <Active Int>
+                Age: 16w0d 17:18:08
+                Validation State: unverified
+                Task: IF
+                Announcement bits (1): 2-OSPF
+                AS path: I
+
+178.21.219.8/30 (1 entry, 1 announced)
+        *OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+178.21.219.12/32 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.1054
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:14
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+185.158.144.0/22 (2 entries, 1 announced)
+        *Static Preference: 5
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 16w0d 17:18:08
+                Validation State: unverified
+                Task: RT
+                Announcement bits (3): 0-KRT 2-OSPF 4-BGP_RT_Background
+                AS path: I
+         OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Int Ext>
+                Inactive reason: Route Preference
+                Age: 1w5d 17:24:17 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                AS path: I
+
+185.158.144.0/23 (1 entry, 1 announced)
+        *OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 1w5d 17:24:18 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+185.158.144.0/24 (1 entry, 1 announced)
+        *OSPF   Preference: 10
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int>
+                Age: 14w2d 17:38:14 	Metric: 201
+                Validation State: unverified
+                Area: 0.0.0.0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+185.158.145.0/24 (1 entry, 1 announced)
+        *OSPF   Preference: 10
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int>
+                Age: 14w2d 13:32:41 	Metric: 201
+                Validation State: unverified
+                Area: 0.0.0.0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+185.158.146.0/23 (1 entry, 1 announced)
+        *Static Preference: 5
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 16w0d 17:18:09
+                Validation State: unverified
+                Task: RT
+                Announcement bits (3): 0-KRT 2-OSPF 4-BGP_RT_Background
+                AS path: I
+
+185.158.146.0/24 (1 entry, 1 announced)
+        *OSPF   Preference: 10
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int>
+                Age: 14w2d 17:38:14 	Metric: 201
+                Validation State: unverified
+                Area: 0.0.0.0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+185.158.147.0/24 (1 entry, 1 announced)
+        *OSPF   Preference: 10
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int>
+                Age: 14w2d 13:32:41 	Metric: 201
+                Validation State: unverified
+                Area: 0.0.0.0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+192.168.3.0/24 (1 entry, 1 announced)
+        *Static Preference: 5
+                Next hop type: Router, Next hop index: 1440
+                Address: 0x19a13d4
+                Next-hop reference count: 4
+                Next hop: via st0.0, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 1w0d 16:54:43
+                Validation State: unverified
+                Task: RT
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: I
+
+193.203.220.0/23 (1 entry, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1432
+                Address: 0x19a1378
+                Next-hop reference count: 5
+                Source: 178.21.219.9
+                Next hop: 178.21.219.9 via reth0.1054, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 38915
+                Age: 3d 5:38:10 	Metric: 1
+                Validation State: unverified
+                Task: BGP_38915_51299.178.21.219.9
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 38915 I
+                Accepted
+                Localpref: 100
+                Router ID: 193.203.221.122
+
+195.121.127.0/25 (2 entries, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1441
+                Address: 0x19a148c
+                Next-hop reference count: 18
+                Source: 145.54.72.225
+                Next hop: 145.54.72.225 via reth0.2706, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 65444
+                Age: 16w0d 17:17:49 	Metric: 0
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.225
+                Announcement bits (2): 0-KRT 2-OSPF
+                AS path: 65444 I (Atomic)
+                Aggregator: 65444 10.45.52.135
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.135
+         BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 0
+                Address: 0x19a1430
+                Next-hop reference count: 9
+                Source: 145.54.72.233
+                Next hop: 145.54.72.233 via reth0.2706, selected
+                Session Id: 0x0
+                State: <NotBest Ext>
+                Inactive reason: Not Best in its group - Active preferred
+                Peer AS: 65444
+                Age: 9w2d 14:29:00 	Metric: 0
+                Validation State: unverified
+                Task: BGP_65444_51299.145.54.72.233
+                AS path: 65444 I (Atomic)
+                Aggregator: 65444 10.45.52.136
+                Accepted
+                Localpref: 100
+                Router ID: 10.45.52.136
+
+195.121.127.128/25 (1 entry, 1 announced)
+        *OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 1w5d 17:24:18 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+213.207.10.0/26 (2 entries, 1 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a15fc
+                Next-hop reference count: 1
+                Next hop: via reth0.26, selected
+                State: <Active Int>
+                Age: 3w1d 18:34:53
+                Validation State: unverified
+                Task: IF
+                Announcement bits (1): 2-OSPF
+                AS path: I
+         OSPF   Preference: 150
+                Next hop type: Router, Next hop index: 1400
+                Address: 0x19a10f4
+                Next-hop reference count: 57
+                Next hop: 100.95.200.2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Int Ext>
+                Inactive reason: Route Preference
+                Age: 1w5d 17:24:18 	Metric: 0
+                Validation State: unverified
+                	Tag: 0
+                Task: OSPF
+                AS path: I
+
+213.207.10.56/32 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.26
+                State: <Active NoReadvrt Int>
+                Age: 3w1d 18:34:53
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+224.0.0.5/32 (1 entry, 1 announced)
+        *OSPF   Preference: 10
+                Next hop type: MultiRecv, Next hop index: 0
+                Address: 0x16b0614
+                Next-hop reference count: 2
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:19 	Metric: 1
+                Validation State: unverified
+                Task: OSPF I/O./var/run/ppmd_control
+                Announcement bits (1): 0-KRT
+                AS path: I
+
+dmz-vr.inet.0: 11 destinations, 11 routes (11 active, 0 holddown, 0 hidden)
+
+0.0.0.0/0 (1 entry, 1 announced)
+        *Static Preference: 5
+                Next hop type: Router, Next hop index: 1402
+                Address: 0x19a11ac
+                Next-hop reference count: 3
+                Next hop: 185.158.146.1 via reth0.1564, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 16w0d 17:18:09
+                Validation State: unverified
+                Task: RT
+                Announcement bits (2): 1-KRT 2-Resolve tree 2
+                AS path: I
+
+10.10.253.0/24 (1 entry, 1 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a0e70
+                Next-hop reference count: 1
+                Next hop: via reth0.51, selected
+                State: <Active Int>
+                Age: 16w0d 17:18:09
+                Validation State: unverified
+                Task: IF
+                Announcement bits (1): 2-Resolve tree 2
+                AS path: I
+
+10.10.253.1/32 (1 entry, 1 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.51
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:12
+                Validation State: unverified
+                Task: IF
+                Announcement bits (1): 2-Resolve tree 2
+                AS path: I
+
+10.194.0.0/24 (1 entry, 1 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a0e14
+                Next-hop reference count: 1
+                Next hop: via reth0.50, selected
+                State: <Active Int>
+                Age: 16w0d 17:18:09
+                Validation State: unverified
+                Task: IF
+                Announcement bits (1): 2-Resolve tree 2
+                AS path: I
+
+10.194.0.1/32 (1 entry, 1 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.50
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:12
+                Validation State: unverified
+                Task: IF
+                Announcement bits (1): 2-Resolve tree 2
+                AS path: I
+
+185.158.146.0/24 (1 entry, 1 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a0d5c
+                Next-hop reference count: 1
+                Next hop: via reth0.1564, selected
+                State: <Active Int>
+                Age: 16w0d 17:18:09
+                Validation State: unverified
+                Task: IF
+                Announcement bits (1): 2-Resolve tree 2
+                AS path: I
+
+185.158.146.27/32 (1 entry, 1 announced)
+        *Static Preference: 1
+                Next hop type: Receive, Next hop index: 0
+                Address: 0x16afbf0
+                Next-hop reference count: 8
+                State: <Active Int ProxyArp NSR-incapable>
+                Age: 16w0d 17:19:08
+                Validation State: unverified
+                Task: RPD Unix Domain Server./var/run/rpd_serv.local
+                Announcement bits (2): 1-KRT 2-Resolve tree 2
+                AS path: I
+
+185.158.146.28/32 (1 entry, 1 announced)
+        *Static Preference: 1
+                Next hop type: Receive, Next hop index: 0
+                Address: 0x16afbf0
+                Next-hop reference count: 8
+                State: <Active Int ProxyArp NSR-incapable>
+                Age: 16w0d 17:19:08
+                Validation State: unverified
+                Task: RPD Unix Domain Server./var/run/rpd_serv.local
+                Announcement bits (2): 1-KRT 2-Resolve tree 2
+                AS path: I
+
+185.158.146.29/32 (1 entry, 1 announced)
+        *Static Preference: 1
+                Next hop type: Receive, Next hop index: 0
+                Address: 0x16afbf0
+                Next-hop reference count: 8
+                State: <Active Int ProxyArp NSR-incapable>
+                Age: 16w0d 17:19:08
+                Validation State: unverified
+                Task: RPD Unix Domain Server./var/run/rpd_serv.local
+                Announcement bits (2): 1-KRT 2-Resolve tree 2
+                AS path: I
+
+185.158.146.30/32 (1 entry, 1 announced)
+        *Static Preference: 1
+                Next hop type: Receive, Next hop index: 0
+                Address: 0x16afbf0
+                Next-hop reference count: 8
+                State: <Active Int ProxyArp NSR-incapable>
+                Age: 16w0d 17:19:08
+                Validation State: unverified
+                Task: RPD Unix Domain Server./var/run/rpd_serv.local
+                Announcement bits (2): 1-KRT 2-Resolve tree 2
+                AS path: I
+
+185.158.146.251/32 (1 entry, 1 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.1564
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:12
+                Validation State: unverified
+                Task: IF
+                Announcement bits (1): 2-Resolve tree 2
+                AS path: I
+
+inet6.0: 14 destinations, 14 routes (13 active, 0 holddown, 1 hidden)
+
+::/0 (1 entry, 1 announced)
+        *BGP    Preference: 170/-101
+                Next hop type: Router, Next hop index: 1445
+                Address: 0x19a14e8
+                Next-hop reference count: 3
+                Source: 2a02:690:4310:470::a
+                Next hop: 2a02:690:4310:470::a via reth0.470, selected
+                Session Id: 0x0
+                State: <Active Ext>
+                Peer AS: 41960
+                Age: 4w5d 12:13:15 	Metric: 10
+                Validation State: unverified
+                Task: BGP_41960_51299.2a02:690:4310:470::a
+                Announcement bits (1): 0-KRT
+                AS path: 41960 I
+                Accepted
+                Localpref: 100
+                Router ID: 195.238.86.36
+
+2a02:10:3::/64 (1 entry, 0 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a16b4
+                Next-hop reference count: 1
+                Next hop: via reth0.26, selected
+                State: <Active Int>
+                Age: 3w1d 18:34:42
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+2a02:10:3::a505:1299:1/128 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.26
+                State: <Active NoReadvrt Int>
+                Age: 3w1d 18:34:53
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+2a02:690:4310:470::a/127 (1 entry, 0 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a1264
+                Next-hop reference count: 1
+                Next hop: via reth0.470, selected
+                State: <Active Int>
+                Age: 16w0d 17:17:58
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+2a02:690:4310:470::b/128 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.470
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:15
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+2a07:ae00::/31 (1 entry, 1 announced)
+        *Static Preference: 5
+                Next hop type: Router, Next hop index: 1428
+                Address: 0x19a131c
+                Next-hop reference count: 5
+                Next hop: 2a07:ae01::2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 16w0d 17:17:58
+                Validation State: unverified
+                Task: RT
+                Announcement bits (2): 0-KRT 2-BGP_RT_Background
+                AS path: I
+
+2a07:ae01::/32 (1 entry, 1 announced)
+        *Static Preference: 5
+                Next hop type: Router, Next hop index: 1428
+                Address: 0x19a131c
+                Next-hop reference count: 5
+                Next hop: 2a07:ae01::2 via reth0.52, selected
+                Session Id: 0x0
+                State: <Active Int Ext>
+                Age: 16w0d 17:17:58
+                Validation State: unverified
+                Task: RT
+                Announcement bits (2): 0-KRT 2-BGP_RT_Background
+                AS path: I
+
+2a07:ae01::/112 (1 entry, 0 announced)
+        *Direct Preference: 0
+                Next hop type: Interface, Next hop index: 0
+                Address: 0x19a12c0
+                Next-hop reference count: 1
+                Next hop: via reth0.52, selected
+                State: <Active Int>
+                Age: 16w0d 17:17:58
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+2a07:ae01::1/128 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.52
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:15
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+fe80::210:db00:1aff:8c00/128 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.26
+                State: <Active NoReadvrt Int>
+                Age: 3w1d 18:34:53
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+fe80::210:db00:34ff:8c00/128 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.52
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:15
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+fe80::210:db01:d6ff:8c00/128 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: reth0.470
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:19:15
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+fe80::d604:ff0f:fc13:af98/128 (1 entry, 0 announced)
+        *Local  Preference: 0
+                Next hop type: Local, Next hop index: 0
+                Address: 0x16af1cc
+                Next-hop reference count: 23
+                Next hop:
+                Interface: st0.0
+                State: <Active NoReadvrt Int>
+                Age: 16w0d 17:17:53
+                Validation State: unverified
+                Task: IF
+                AS path: I
+
+{primary:node0}

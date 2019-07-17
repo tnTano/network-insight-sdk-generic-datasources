@@ -1,0 +1,19 @@
+
+MAC Address       Address         Interface         Flags
+58:00:bb:5b:29:30 30.65.0.2       fab0.0                   permanent
+d0:07:ca:76:99:30 30.66.0.1       fab1.0                   permanent
+00:08:25:a0:ce:af 62.59.160.249   reth0.682                none
+00:08:25:a0:c0:e4 62.59.160.251   reth0.682                none
+00:00:0c:9f:f0:bd 83.96.226.105   reth0.5                  none
+54:75:d0:a7:3c:00 83.96.226.109   reth0.5                  none
+54:75:d0:a7:3c:80 83.96.226.110   reth0.5                  none
+00:08:25:a2:1b:75 91.236.19.4     reth0.910                none
+78:fe:3d:37:6e:c1 100.95.100.2    reth0.51                 none
+58:00:bb:5b:28:01 130.64.0.1      fxp1.0                   none
+54:75:d0:bd:12:80 145.54.72.229   reth0.2706               none
+54:75:d0:bd:13:00 145.54.72.237   reth0.2706               none
+78:fe:3d:37:6e:c1 172.25.97.254   reth0.40                 none
+74:8e:f8:a4:10:c1 178.21.219.9    reth0.1054               none
+Total entries: 14
+
+{primary:node0}

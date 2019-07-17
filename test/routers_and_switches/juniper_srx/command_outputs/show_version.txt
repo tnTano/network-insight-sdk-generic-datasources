@@ -1,0 +1,16 @@
+
+node0:
+--------------------------------------------------------------------------
+Hostname: fw1.rdm.nl.rgtn.com
+Model: srx550m
+Junos: 15.1X49-D150.2
+JUNOS Software Release [15.1X49-D150.2]
+
+node1:
+--------------------------------------------------------------------------
+Hostname: fw2.rdm.nl.rgtn.com
+Model: srx550m
+Junos: 15.1X49-D150.2
+JUNOS Software Release [15.1X49-D150.2]
+
+{primary:node0}

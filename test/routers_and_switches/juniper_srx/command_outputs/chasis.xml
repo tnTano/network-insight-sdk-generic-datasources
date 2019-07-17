@@ -1,0 +1,120 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/15.1X49/junos">
+    <multi-routing-engine-results>
+
+        <multi-routing-engine-item>
+
+            <re-name>node0</re-name>
+
+            <chassis-inventory xmlns="http://xml.juniper.net/junos/15.1X49/junos-chassis">
+                <chassis junos:style="inventory">
+                    <name>Chassis</name>
+                    <serial-number>DA2316AK0062</serial-number>
+                    <description>SRX550M</description>
+                    <chassis-module>
+                        <name>Midplane</name>
+                        <version>REV 08</version>
+                        <part-number>750-063950</part-number>
+                        <serial-number>ACPC7944</serial-number>
+                        <model-number></model-number>
+                    </chassis-module>
+                    <chassis-module>
+                        <name>Routing Engine</name>
+                        <version>REV 06</version>
+                        <part-number>711-062269</part-number>
+                        <serial-number>ACPC3223</serial-number>
+                        <description>RE-SRX550M</description>
+                        <model-number></model-number>
+                    </chassis-module>
+                    <chassis-module>
+                        <name>FPC 0</name>
+                        <description>FPC</description>
+                        <model-number></model-number>
+                        <chassis-sub-module>
+                            <name>PIC 0</name>
+                            <description>6x GE, 4x GE SFP Base PIC</description>
+                            <model-number></model-number>
+                        </chassis-sub-module>
+                    </chassis-module>
+                    <chassis-module>
+                        <name>Power Supply 0</name>
+                        <version>Rev 04</version>
+                        <part-number>740-024283</part-number>
+                        <serial-number>AD87061</serial-number>
+                        <description>PS 645W AC</description>
+                        <clei-code>COUPAECEAA</clei-code>
+                        <model-number>SRX600-PWR-645AC-POE</model-number>
+                    </chassis-module>
+                    <chassis-module>
+                        <name>Power Supply 1</name>
+                        <version>Rev 04</version>
+                        <part-number>740-024283</part-number>
+                        <serial-number>AA83294</serial-number>
+                        <description>PS 645W AC</description>
+                        <clei-code>COUPAECEAA</clei-code>
+                        <model-number>SRX600-PWR-645AC-POE</model-number>
+                    </chassis-module>
+                </chassis>
+            </chassis-inventory>
+        </multi-routing-engine-item>
+
+        <multi-routing-engine-item>
+
+            <re-name>node1</re-name>
+
+            <chassis-inventory xmlns="http://xml.juniper.net/junos/15.1X49/junos-chassis">
+                <chassis junos:style="inventory">
+                    <name>Chassis</name>
+                    <serial-number>DA2316AK0050</serial-number>
+                    <description>SRX550M</description>
+                    <chassis-module>
+                        <name>Midplane</name>
+                        <version>REV 08</version>
+                        <part-number>750-063950</part-number>
+                        <serial-number>ACPC8049</serial-number>
+                        <model-number></model-number>
+                    </chassis-module>
+                    <chassis-module>
+                        <name>Routing Engine</name>
+                        <version>REV 06</version>
+                        <part-number>711-062269</part-number>
+                        <serial-number>ACPD2861</serial-number>
+                        <description>RE-SRX550M</description>
+                        <model-number></model-number>
+                    </chassis-module>
+                    <chassis-module>
+                        <name>FPC 0</name>
+                        <description>FPC</description>
+                        <model-number></model-number>
+                        <chassis-sub-module>
+                            <name>PIC 0</name>
+                            <description>6x GE, 4x GE SFP Base PIC</description>
+                            <model-number></model-number>
+                        </chassis-sub-module>
+                    </chassis-module>
+                    <chassis-module>
+                        <name>Power Supply 0</name>
+                        <version>Rev 04</version>
+                        <part-number>740-024283</part-number>
+                        <serial-number>AD87067</serial-number>
+                        <description>PS 645W AC</description>
+                        <clei-code>COUPAECEAA</clei-code>
+                        <model-number>SRX600-PWR-645AC-POE</model-number>
+                    </chassis-module>
+                    <chassis-module>
+                        <name>Power Supply 1</name>
+                        <version>Rev 04</version>
+                        <part-number>740-024283</part-number>
+                        <serial-number>ZK81766</serial-number>
+                        <description>PS 645W AC</description>
+                        <clei-code>COUPAECEAA</clei-code>
+                        <model-number>SRX600-PWR-645AC-POE</model-number>
+                    </chassis-module>
+                </chassis>
+            </chassis-inventory>
+        </multi-routing-engine-item>
+
+    </multi-routing-engine-results>
+    <cli>
+        <banner>{primary:node0}</banner>
+    </cli>
+</rpc-reply>
