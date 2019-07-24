@@ -5,9 +5,9 @@ from twisted.conch.insults import insults
 from twisted.cred import portal, checkers
 from twisted.internet import reactor
 from zope.interface import implements
-import os
+import logging
 
-class SSHDemoProtocol(recvline.HistoricRecvLine):
+class SSHProtocol(recvline.HistoricRecvLine):
     def __init__(self, user):
         self.user = user
 
@@ -62,37 +62,7 @@ class SSHDemoProtocol(recvline.HistoricRecvLine):
         self.terminal.nextLine()
 
     def do_show(self, *args):
-        if "lldp neighbors" in " ".join(args):
-            with open("{}/show_lldp_neighbor.txt".format(os.getcwd())) as f:
-                for line in f.readlines():
-                    self.terminal.write(line)
-        elif "version" in " ".join(args):
-            with open("{}/show_version.txt".format(os.getcwd())) as f:
-                for line in f.readlines():
-                    self.terminal.write(line)
-        elif "interfaces detail" in " ".join(args):
-            with open("{}/show_interfaces_detail.txt".format(os.getcwd())) as f:
-                for line in f.readlines():
-                    self.terminal.write(line)
-        elif "chassis hardware" in " ".join(args):
-            with open("{}/chasis.xml".format(os.getcwd())) as f:
-                self.terminal.write(f.read())
-        elif "route detail" in " ".join(args):
-            with open("{}/show_route.txt".format(os.getcwd())) as f:
-                for line in f.readlines():
-                    self.terminal.write(line)
-        elif "arp no-resolve" in " ".join(args):
-            with open("{}/show_arp_no_resolve_mac_table.txt".format(os.getcwd())) as f:
-                for line in f.readlines():
-                    self.terminal.write(line)
-        elif "route instance detail" in " ".join(args):
-            with open("{}/show_route_instance_detail.txt".format(os.getcwd())) as f:
-                for line in f.readlines():
-                    self.terminal.write(line)
-        elif "configuration interfaces" in " ".join(args):
-            with open("{}/show_configuration_interfaces.txt".format(os.getcwd())) as f:
-                for line in f.readlines():
-                    self.terminal.write(line)
+        raise NotImplementedError()
 
     def do_quit(self):
         self.terminal.write("Thanks for playing!")
@@ -103,7 +73,7 @@ class SSHDemoProtocol(recvline.HistoricRecvLine):
         self.terminal.reset()
 
 
-class SSHDemoAvatar(avatar.ConchUser):
+class SSHAvatar(avatar.ConchUser):
     implements(ISession)
 
     def __init__(self, username):
@@ -112,7 +82,7 @@ class SSHDemoAvatar(avatar.ConchUser):
         self.channelLookup.update({'session': session.SSHSession})
 
     def openShell(self, protocol):
-        serverProtocol = insults.ServerProtocol(SSHDemoProtocol, self)
+        serverProtocol = insults.ServerProtocol(SSHProtocol, self)
         serverProtocol.makeConnection(protocol)
         protocol.makeConnection(session.wrapProtocol(serverProtocol))
 
@@ -126,29 +96,58 @@ class SSHDemoAvatar(avatar.ConchUser):
         pass
 
 
-class SSHDemoRealm(object):
+class SSHRealm(object):
     implements(portal.IRealm)
 
     def requestAvatar(self, avatarId, mind, *interfaces):
         if IConchUser in interfaces:
-            return interfaces[0], SSHDemoAvatar(avatarId), lambda: None
+            return interfaces[0], SSHAvatar(avatarId), lambda: None
         else:
             raise NotImplementedError("No supported interfaces found.")
 
-
 def getRSAKeys():
-    with open('abc') as privateBlobFile:
+    with open('id_rsa') as privateBlobFile:
         privateBlob = privateBlobFile.read()
         privateKey = keys.Key.fromString(data=privateBlob)
 
-    with open('abc.pub') as publicBlobFile:
+    with open('id_rsa.pub') as publicBlobFile:
         publicBlob = publicBlobFile.read()
         publicKey = keys.Key.fromString(data=publicBlob)
     return publicKey, privateKey
 
+
+class SwitchSshService():
+    def __init__(self, ip=None, port=22, switch_core=None, users=None):
+        self.ip = ip
+        self.port = port
+        self.switch_core = switch_core
+        self.users = users
+
+    def hook_to_reactor(self, reactor):
+        ssh_factory = factory.SSHFactory()
+        sshFactory.portal = portal.Portal(SSHRealm())
+        ssh_factory.portal = portal.Portal(SSHRealm(self.switch_core))
+        if not self.users:
+            self.users = {'root': b'root'}
+        ssh_factory.portal.registerChecker(
+            checkers.InMemoryUsernamePasswordDatabaseDontUse(**self.users))
+
+        host_public_key, host_private_key = getRSAKeys()
+        ssh_factory.publicKeys = {
+            b'ssh-rsa': keys.Key.fromString(data=host_public_key.encode())}
+        ssh_factory.privateKeys = {
+            b'ssh-rsa': keys.Key.fromString(data=host_private_key.encode())}
+
+        lport = reactor.listenTCP(port=self.port, factory=ssh_factory, interface=self.ip)
+        logging.info(lport)
+        logging.info(
+            "%s (SSH): Registered on %s tcp/%s" % (self.switch_core.switch_configuration.name, self.ip, self.port))
+        return lport
+
+
 if __name__ == "__main__":
     sshFactory = factory.SSHFactory()
-    sshFactory.portal = portal.Portal(SSHDemoRealm())
+
 
 users = {'admin': b'aaa', 'guest': b'bbb'}
 sshFactory.portal.registerChecker(
