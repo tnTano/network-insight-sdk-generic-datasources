@@ -39,7 +39,7 @@ def main():
                               dir_path,
                               os.path.sep,
                               yaml_definition_file_name)) as f:
-        configuration = yaml_utilities.altered_safe_load(f)
+        configuration = yaml_utilities.altered_safe_load(f, ip_fqdn=args.ip_or_fqdn)
         table_joiner = configuration[args.model][TABLE_JOINERS_KEY] if TABLE_JOINERS_KEY in configuration[
             args.model] else None
         generation_directory = configuration[GENERATION_DIRECTORY_KEY] + '/' + args.ip_or_fqdn

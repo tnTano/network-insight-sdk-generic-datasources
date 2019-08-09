@@ -3,6 +3,7 @@ vertical_table_parser: &VERTICAL_TABLE_PARSER network_insight_sdk_generic_dataso
 horizontal_table_parser: &HORIZONTAL_TABLE_PARSER network_insight_sdk_generic_datasources.parsers.common.horizontal_table_parser.HorizontalTableParser
 generic_text_parser: &GENERIC_TEXT_PARSER network_insight_sdk_generic_datasources.parsers.common.text_parser.GenericTextParser
 generation_directory: &GENERATION_DIRECTORY /tmp/uani
+ip_or_fqdn: &IP_OR_FQDN <ip_or_fqdn>
 
 package_handler: &PACKAGE_HANDLER
   name: ZipPackageHandler
@@ -89,11 +90,12 @@ workloads: &WORKLOADS
       name: *GENERIC_TEXT_PARSER
       arguments:
         rules:
-          name: "Machine Description\\.* (.*)"
+          ipAddress/fqdn: *IP_OR_FQDN
+          name: *IP_OR_FQDN
           model: "System Model ID\\.* (.*)"
           os: "Image File\\.* (.*)"
           serial: "Serial Number\\.* (.*)"
-          hostname: "Machine Type\\.* (.*)"
+          hostname: *IP_OR_FQDN
 
   - &SHOW_LLDP_REMOTE_DEVICE
     table_id: neighbors

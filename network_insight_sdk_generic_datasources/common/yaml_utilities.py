@@ -21,15 +21,15 @@ def yaml_include(loader, node):
     with open(file_name) as inputfile:
         return altered_safe_load(inputfile, master=loader)
 
-
 yaml.add_constructor("!include", yaml_include, Loader=yaml.SafeLoader)
 
-
-def altered_safe_load(stream, Loader=yaml.SafeLoader, master=None):
+def altered_safe_load(stream, Loader=yaml.SafeLoader, master=None, ip_fqdn=None):
     loader = Loader(stream)
     if master is not None:
         loader.anchors = master.anchors
     try:
+        if ip_fqdn:
+            loader.buffer = loader.buffer.replace('<ip_or_fqdn>', '{}'.format(ip_fqdn))
         return loader.get_single_data()
     finally:
         loader.dispose()
